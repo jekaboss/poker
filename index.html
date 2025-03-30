@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="uk">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Калькулятор ймовірності в покері</title>
+	<link rel="stylesheet" href="css/styles.css">
+</head>
+
+<body>
+	<div class="container">
+		<h1>Калькулятор ймовірності в покері</h1>
+
+		<div class="conpoker">
+			<div class="section">
+				<h3>Ваші карти (2)</h3>
+				<div id="hole-cards" class="card-container"></div>
+				<button onclick="addCard('hole')" class="btn">Додати карту</button>
+			</div>
+			
+			<div class="section">
+				<h3>Спільні карти (до 5)</h3>
+				<div id="community-cards" class="card-container"></div>
+				<button onclick="addCard('community')" class="btn">Додати карту</button>
+			</div>
+		</div>
+
+		<button onclick="calculateWinChance()" id="calc-btn" class="btn calc-btn" disabled>Розрахувати</button>
+		<p id="result"></p>
+	</div>
+	<script src="js/script.js"></script>
+</body>
+
+</html>
